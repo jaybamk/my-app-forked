@@ -1,20 +1,16 @@
 import styles from "@/app/page.module.scss";
+import Footer from "@/components/Footer/index";
+import Header from "@/components/Header/index";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Header />
       <div>My Next.js App</div>
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>John</td><td>25</td>
-        </tr>
-      </table>
+      
+      <a href="/contact">contact</a>
       <div style={{ width: 200, height: 200 }}> djkfdjkdfkfd</div>
-
+      <Footer />
     </main>
   );
 }
