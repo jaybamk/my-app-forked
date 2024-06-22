@@ -1,19 +1,19 @@
+import Image from "next/image";
+import styles from './styles.module.scss'
 
 export default function Header() {
-    const date = new Date();
     return <>
-        <header>
-            <nav>
+        <header className={`w-100 ${styles.header} position-fixed`}>
+            <nav className={`w-100 d-flex justify-content-between`}>
                 <div>
                     <a href="/">
-                        <img src="/vercel.svg" alt="logo" />
+                        <Image src="/vercel.svg" alt="logo" width={72} height={16} />
                     </a>
                 </div>
-                <ul>
+                <ul className={`d-flex list-unstyled`}>
                     <li><a href="/contact">contact</a></li>
                     <li><a href="/about">about</a></li>
                     <li><a href="/auth/signin">signin</a></li>
-                    <li><a href="/auth/signin">{date.toISOString()}</a></li>
                 </ul>
             </nav>
         </header>
