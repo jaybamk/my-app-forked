@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Header />
-      <div>My Next.js App</div>
+      <div style={{ width: 'auto', height: 'auto' }}>My Next.js App</div>
 
       <Link href={routes.support.contact}>contact</Link>
       <div style={{ width: 200, height: 2000 }}> djkfdjkdfkfd</div>
