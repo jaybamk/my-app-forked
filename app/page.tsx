@@ -1,14 +1,14 @@
 'use client';
-import { useState } from "react";
 import Link from "next/link";
 import routes from "@/routes";
 import styles from "@/app/page.module.scss";
 import Button from "@/components/Button/Button";
 import Footer from "@/components/Footer/index";
 import Header from "@/components/Header/index";
+import useCounter from "@/hooks/Counter";
 
 export default function Home() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useCounter(0)
 
   return (
     <main className={styles.main}>

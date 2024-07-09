@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from "react";
 
 function useCounter(initial: number): [number, (newCount: number) => void] {
