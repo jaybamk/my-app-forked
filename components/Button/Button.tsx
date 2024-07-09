@@ -1,11 +1,8 @@
 'use client';
-import { useState } from 'react';
 import styles from './Button.module.scss';
-const Button = ({ counted, size }: { counted: number, size: 'small' | 'large' }) => {
-    const [count, setCount] = useState<number>(0)
-    const [counter, setCounter] = useState<number>(() => 0)
-
+const Button = ({ count, counted, setCount, size }: { count: number, counted: number, setCount: (newCount: number) => void, size: 'small' | 'large' }) => {
     let anyNumber = 10;
+    if (anyNumber === 11) { return <button>button</button> }
 
     const handleClick = () => {
         const newCount = ((oldCount: number) => oldCount + 1)(count)
@@ -15,7 +12,7 @@ const Button = ({ counted, size }: { counted: number, size: 'small' | 'large' })
     }
 
     console.log(`counted:${counted},size: ${size}`, `anyNumber: ${anyNumber}`, `clicked ${count} time${count > 1 ? 's' : ''}`)
-    return <button className={`${styles.btn} px-4  py-2`} onClick={handleClick}>{count ? `Clicked ${count} time${count > 1 ? 's' : ''}` : 'Click me!'}</button>
+    return <button className={`${styles.btn} px-4  py-2`} onClick={handleClick}>{count ? ` size,${size} with counted ${counted} is clicked ${count} time${count > 1 ? 's' : ''}` : 'Click me!'}</button>
 
 }
 
