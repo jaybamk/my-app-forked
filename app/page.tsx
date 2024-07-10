@@ -1,4 +1,5 @@
 'use client';
+import { useEffect } from "react";
 import Link from "next/link";
 import routes from "@/routes";
 import styles from "@/app/page.module.scss";
@@ -9,6 +10,12 @@ import useCounter from "@/hooks/Counter";
 
 export default function Home() {
   const [count, setCount] = useCounter(0)
+
+  useEffect(() => {
+    // console.log(count)
+    alert(count)
+    return () => alert("I'm going")
+  }, [count])
 
   return (
     <main className={styles.main}>

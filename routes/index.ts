@@ -1,5 +1,10 @@
 const routes = {
   home: "/",
+  auth:{
+    index: "/auth",
+    signin: "/auth/signin",
+    signup: "/auth/signup",
+  },
   support: {
     index: "/support",
     contact: "/support/contact",
