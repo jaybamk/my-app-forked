@@ -8,7 +8,7 @@ export default function AboutUs() {
   const ref = useRef(null);
 
   useEffect(() => {
-    const animation = new FadeInAnimation(ref.current);
+    const animation = new FadeInAnimation(ref.current); //Instance of FadeInAnimation
     animation.start(1000);
     return () => {
       animation.stop();
