@@ -1,17 +1,13 @@
 interface AnimationInterface {
-  frameId: number | null;
+  readonly frameId: number | null;
   restart: (duration: number) => void;
 }
 
-class Animation implements AnimationInterface {
+abstract class Animation implements AnimationInterface {
   protected startTime: number | null = 0;
   protected frameName: string = "animation";
   public frameId: number | null = 0;
-
-  restart() {
-    this.startTime = performance.now();
-    console.log("animation");
-  }
+  abstract restart(duration: number): void;
 }
 
 export class FadeInAnimation extends Animation {
@@ -20,6 +16,11 @@ export class FadeInAnimation extends Animation {
   constructor(node: any) {
     super();
     this.node = node;
+  }
+
+  restart() {
+    this.startTime = performance.now();
+    console.log("animation");
   }
   start(duration: number) {
     this.duration = duration;
