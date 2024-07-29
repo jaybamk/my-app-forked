@@ -22,7 +22,7 @@ export default function Home() {
       <Header />
       <div style={{ width: 'auto', height: 'auto' }}>My Next.js App</div>
       <Link href={routes.support.contact}>contact</Link>
-      <Button setCount={setCount} count={count} counted={1} size={'small'} />
+      <Button {...{ count, setCount, counted: 1, size: 'small' }} />
       <Button setCount={setCount} count={count} counted={2} size={'large'} />
 
       <div style={{ width: 200, height: 200 }}> djkfdjkdfkfd</div>
