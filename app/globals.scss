@@ -1,5 +1,35 @@
 @import '~bootstrap/scss/bootstrap';
 
+$primary: #FF9900;
+$secondary: #52B6EC;
+$tertiary: #7D7D7D;
+
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-secondary {
+  background-color: $secondary;
+}
+
+.bg-tertiary {
+  background-color: $tertiary;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+
+.text-tertiary {
+  color: $tertiary;
+}
+
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -71,34 +101,30 @@
   margin: 0;
 }
 
+html {
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
 
-/* body {
+body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-
-.gap-10{
+.gap-10 {
   gap: 10px;
 }
