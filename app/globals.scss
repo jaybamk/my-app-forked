@@ -1,34 +1,5 @@
+@use '../styles' as *;
 @import '~bootstrap/scss/bootstrap';
-
-$primary: #FF9900;
-$secondary: #52B6EC;
-$tertiary: #7D7D7D;
-
-
-.bg-primary {
-  background-color: $primary;
-}
-
-.bg-secondary {
-  background-color: $secondary;
-}
-
-.bg-tertiary {
-  background-color: $tertiary;
-}
-
-.text-primary {
-  color: $primary;
-}
-
-.text-secondary {
-  color: $secondary;
-}
-
-.text-tertiary {
-  color: $tertiary;
-}
-
 
 :root {
   --max-width: 1100px;
