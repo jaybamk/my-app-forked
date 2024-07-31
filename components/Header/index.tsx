@@ -4,6 +4,7 @@ import Link from "next/link";
 import routes from "@/routes";
 import logo from "@/img/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars,faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
     return <>
@@ -21,7 +22,8 @@ export default function Header() {
                         <li><Link href={routes.auth.signin}>signin</Link></li>
                     </ul>
                     <div>
-                    {/* <FontAwesomeIcon icon="fa-solid fa-bars" /> */}
+                    <FontAwesomeIcon icon={faBars} />
+                    <FontAwesomeIcon icon={faTimes} />
                     </div>
                 </div>
             </nav>
