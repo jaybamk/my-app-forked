@@ -9,7 +9,9 @@ export default function SignIn(){
     return(
     <>
     <div className="row container">
-    <div className="d-none d-md-block col-md-5">img</div>
+    <div className="d-none d-md-block col-md-5">
+        <Image src="/signin-img.svg" alt="signin image" width={400} height={700}/>
+    </div>
     <div className="col-xs-12 col-md-7">
         <div>
             <div>
@@ -45,11 +47,12 @@ export default function SignIn(){
                     <label htmlFor="Password">Password</label>
                     <span className="input-group-text" id="basic-addon1">@</span>
                     <input type="password" className="form-control" id="Password" placeholder="Password" aria-label="Password" required/>
+                    <Link href={routes.auth.password.index}>Forget password?</Link>
                     <div>
                         <Button word="Sign In"/>
                     </div>
                 </div>
-            <Link href={routes.auth.password.index}>Forget password?</Link>
+            
             </form>
         </div>
         </div>
