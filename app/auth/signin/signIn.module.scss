@@ -1,1 +1,7 @@
-@import '~bootstrap/scss/bootstrap';
+.dontHaveAcctlink{
+    color: rgb(7, 172, 249);
+}
+.dontHaveAcctlink:hover{
+    color: gray;
+    text-decoration: underline;
+}
