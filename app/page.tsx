@@ -8,11 +8,12 @@ import Header from "@/components/Header/index";
 
 export default function Home() {
 
-  return (
+  return <>
+    <Header />
     <main className={styles.main}>
-      <Header />
+      
 
-      <Footer />
     </main>
-  );
+    <Footer />
+  </>
 }
