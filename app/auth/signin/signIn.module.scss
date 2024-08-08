@@ -27,19 +27,18 @@
     justify-content: center;
 }
 .input{
-    height: 50px;
-    text-align: left;
+    height: 70px;
     font-weight: 700;
-    font-size: larger;
+    font-size: 25px;
     border-left: none;
 }
 .inputText{
     display: flex;
-    width: 100px;
+    min-width: 50px;
     justify-content: center;
     align-items: center;
     background-color: white;
     border-right: none;
-    font-weight: 700;
-    font-size: larger;
+    font-weight: 900;
+    font-size: 25px;
 }

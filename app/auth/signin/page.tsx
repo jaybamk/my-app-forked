@@ -35,18 +35,18 @@ export default function SignIn(){
                 <hr />
             </div>
         </div>
-        <div className="mb-5">
+        <div className="mb-5 mt-3">
             <form action="submit" method="get">
                 <label htmlFor="Email" className="d-block">Email address</label>
                 <div className="input-group mb-5 border-primary">
-                    <span className={`input-group-text ${styles.inputText} border-primary`} id="basic-addon1">
+                    <span className={`input-group-text ${styles.inputText} border-primary w-25`} id="basic-addon1">
                         <i className="bi bi-envelope"></i>
                     </span>
                     <input type="email" className={`${styles.input} form-control border-primary`} id="Email" name="Email" placeholder="johnkentacad@gmail.com" aria-label="Email address" required/>
                 </div>
                 <label htmlFor="Password" className="d-block">Password</label>
                 <div className="input-group mb-5">
-                    <span className={`input-group-text ${styles.inputText} border-primary`} id="basic-addon1">
+                    <span className={`input-group-text ${styles.inputText} border-primary w-25 `} id="basic-addon1">
                         <i className="bi bi-lock"></i>
                     </span>
                     <input type="password" className={`${styles.input} form-control border-primary`} id="Password" placeholder="*******************" aria-label="Password" required/>
