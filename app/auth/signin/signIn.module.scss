@@ -21,24 +21,23 @@
 .btnFacebook:hover {
   background-color: #7997d1;
 }
-.socialDivide{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.socialDivide {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
-.input{
-    height: 70px;
-    font-weight: 700;
-    font-size: 25px;
-    border-left: none;
+.input {
+  height: 70px;
+  font-weight: 700;
+  font-size: 25px;
+  border-left: none;
 }
-.inputText{
-    display: flex;
-    min-width: 50px;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-right: none;
-    font-weight: 900;
-    font-size: 25px;
+.inputText {
+  display: flex;
+  min-width: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-right: none;
+  font-size: 25px;
 }
