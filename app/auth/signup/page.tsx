@@ -52,7 +52,7 @@ export default function SignUp(){
             </div>
         </div>
         <div className="d-none d-lg-flex col-lg-5 bg-secondary justify-content-around">
-            <h2>"The Best way <br /> to Earn is to <br />Learn"</h2>
+            <h2>&quot;The Best way <br /> to Earn is to <br />Learn&quot;</h2>
         </div>
     </div>
     </>

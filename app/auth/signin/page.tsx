@@ -17,7 +17,7 @@ export default function SignIn(){
                 <div className="p-5">
                     <div className="text-start mb-5">
                         <p className="h2 my-3 mb-5"><b>Welcome Back</b></p>
-                        <p className="h6">Don't have an account? <Link href={routes.auth.signup} className={styles.dontHaveAcctlink}>Sign up</Link></p>
+                        <p className="h6">Don&apos;t have an account? <Link href={routes.auth.signup} className={styles.dontHaveAcctlink}>Sign up</Link></p>
                     </div>
                     <div>
                         <div className="d-none d-md-flex row mb-5">
