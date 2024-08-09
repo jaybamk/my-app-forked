@@ -10,7 +10,7 @@ export default function SignIn(){
             <div className="d-none d-lg-flex col-lg-5 bg-primary justify-content-around">
                 <Image src="/signin-img.svg" alt="signin image" width={400} height={700}/>
             </div>
-            <div className="col-xs-12 col-lg-7 p-5 pt-3 pb-3">
+            <div className="col-xs-12 col-lg-7 p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5">
                 <Link href="/" >
                     <Image src={logo} alt="logo" width={120} height={45} className="float-end my-5"/>
                 </Link>
