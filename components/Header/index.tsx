@@ -29,7 +29,7 @@ export default function Header() {
                         <li><Link href={routes.support.contact}>Packages</Link></li>
                         <li><Link href={routes.support.about}>Testimonial</Link></li>
                         <li><Link href={routes.auth.signin}>Offers</Link></li>
-                        <li><Link className="btn btn-secondary" href={routes.auth.signin}>Sign Up</Link></li>
+                        <li><Link className="btn btn-secondary" href={routes.auth.signup}>Sign Up</Link></li>
                         <li><Link className="btn bg-transparent border-secondary" href={routes.auth.signin}>Login</Link></li>
                     </ul>
                 </div>
