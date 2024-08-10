@@ -1,7 +1,9 @@
+"use client";
 import styles from './signup.module.scss';
 import routes from "@/routes";
 import Image from "next/image";
 import Link from "next/link";
+import CountrySelect from "./countrySelect/index"
 export default function SignUp(){
     return(
     <>
@@ -48,6 +50,7 @@ export default function SignUp(){
                                             <option value=""></option>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
+                                            <option value="transgender">Transgender</option>
                                         </select>
                                     </div>
                                 </div>
@@ -62,14 +65,12 @@ export default function SignUp(){
                                 <div className='col-6'>
                                     <label htmlFor="country" className="d-block">Country</label>
                                     <div className="input-group mb-3">
-                                        <select className={`${styles.input} form-control border-primary`} id="country">
-                                                <option value=""></option>
-                                        </select>
+                                        <CountrySelect/>
                                     </div>
                                 </div>
                             </div>
-                            <div className='mb-3'>
-                                <input type="checkbox" name="agreement" id="agreement" className='m-3' required/>
+                            <div className='mb-3 d-flex align-items-center'>
+                                <input type="checkbox" name="agreement" id="agreement" className='align-self-start m-3' required/>
                                 <label htmlFor="agreement">I agree to Language Academy <Link href={routes.agreement.terms} className="text-primary">Terms</Link> and <Link href={routes.agreement.conditions} className="text-primary">Conditions</Link></label>
                             </div>
                             <div>

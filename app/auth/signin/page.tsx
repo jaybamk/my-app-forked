@@ -40,14 +40,14 @@ export default function SignIn(){
                                     <span className={`input-group-text ${styles.inputText} border-primary w-25`} id="basic-addon1">
                                         <i className="bi bi-envelope"></i>
                                     </span>
-                                    <input type="email" className={`${styles.input} form-control border-primary`} id="Email" name="Email" placeholder="johnkentacad@gmail.com" aria-label="Email address" required/>
+                                    <input type="email" className={`${styles.input} form-control border-primary text-lg-center`} id="Email" name="Email" placeholder="johnkentacad@gmail.com" aria-label="Email address" required/>
                                 </div>
                                 <label htmlFor="Password" className="d-block">Password</label>
                                 <div className="input-group mb-5">
                                     <span className={`input-group-text ${styles.inputText} border-primary w-25 `} id="basic-addon1">
                                         <i className="bi bi-lock"></i>
                                     </span>
-                                    <input type="password" className={`${styles.input} form-control border-primary`} id="Password" placeholder="*******************" aria-label="Password" required/>
+                                    <input type="password" className={`${styles.input} form-control border-primary text-lg-center`} id="Password" placeholder="*******************" aria-label="Password" required/>
                                 </div>   
                                 <div className="mb-4">
                                     <Link href={routes.auth.password.index}>Forget password?</Link>
