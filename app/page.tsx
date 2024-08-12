@@ -26,8 +26,13 @@ export default function Home() {
           <Image className="w-100" src={hero} alt="hero" />
         </div>
       </section>
+      <section className="" >
+        <h2 className="text-center">AMBASSADOR PACKAGES</h2>
+        <p className="text-md-center">Our approach to teaching is unique and our teachers are extremely highly rated. We are affordable, simple, effective and very intensive </p>
+        <div>
 
-
+        </div>
+      </section>
     </main>
     <Footer />
   </>
