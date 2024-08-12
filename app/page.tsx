@@ -13,7 +13,7 @@ export default function Home() {
   return <>
     <Header />
     <main className={`${styles.main} mt-5`}>
-      <section className="w-100 d-flex flex-column flex-md-row align-items-md-center gap-3 gap-md-0 my-3 my-md-5" >
+      <section className="w-100 d-flex flex-column flex-md-row align-items-md-center gap-3 gap-md-0 my-5" >
         <div className="p-7vw col-md-7">
           <h1>Earn over <span className="text-secondary">$500</span> Monthly</h1>
           <h2>
@@ -26,9 +26,9 @@ export default function Home() {
           <Image className="w-100" src={hero} alt="hero" />
         </div>
       </section>
-      <section className="" >
+      <section className="p-7vw d-md-flex flex-column justify-content-center align-items-center" >
         <h2 className="text-center">AMBASSADOR PACKAGES</h2>
-        <p className="text-md-center">Our approach to teaching is unique and our teachers are extremely highly rated. We are affordable, simple, effective and very intensive </p>
+        <p className="text-md-center col-md-9 col-lg-7">Our approach to teaching is unique and our teachers are extremely highly rated. We are affordable, simple, effective and very intensive </p>
         <div>
 
         </div>
