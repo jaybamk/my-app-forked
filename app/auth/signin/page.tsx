@@ -1,8 +1,8 @@
 import styles from './signIn.module.scss';
-import logo from "@/img/logo.png";
 import routes from "@/routes";
 import Image from "next/image";
 import Link from "next/link";
+import LogoComponent from "@/components/LogoComponent";
 export default function SignIn(){
     return(
     <>
@@ -12,7 +12,7 @@ export default function SignIn(){
             </div>
             <div className="col-xs-12 col-lg-7 p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5">
                 <Link href="/" >
-                    <Image src={logo} alt="logo" width={120} height={45} className="float-end my-5"/>
+                    <LogoComponent  className="float-end my-5 me-sm-4 me-md-5"/>
                 </Link>
                 <div className="p-5">
                     <div className="text-start mb-5">

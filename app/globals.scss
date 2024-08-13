@@ -37,7 +37,6 @@
     #00000010,
     #00000080
   );
-
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
@@ -69,11 +68,19 @@
       #ffffff10,
       #ffffff80
     );
-
     --callout-rgb: 20, 20, 20;
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
+  }
+}
+.logo {
+  content: url('/img/logo.png');
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    content: url('/img/logo-white.png');
   }
 }
 
