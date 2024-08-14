@@ -96,7 +96,7 @@ export default function SignUp(){
                 </div>
             </div>
         </div>
-        <div className={`d-none card d-lg-flex col-lg-6 p-1 p-sm-2 p-md-3 p-lg-5 text-center justify-content-center ${styles.bgImage}`}>
+        <div className={`d-none d-lg-flex col-lg-6 p-1 p-sm-2 p-md-3 p-lg-5 text-center justify-content-center ${styles.bgImage}`}>
             <div className='d-flex flex-column justify-content-between align-content-center'>
                 <div className='mt-5 pt-5'>
                     <p className='fs-1 fw-semibold pt-5'>&quot;The Best way <br /> to Earn is to <br />Learn&quot;</p>
