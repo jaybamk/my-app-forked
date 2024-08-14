@@ -28,7 +28,8 @@
   border-radius: 50%;
 }
 .bgImage {
-  background-image: url("/img/homepage-section31.png");
-  background-color: #52b6ec99;
-  background-size: cover;
+  background: linear-gradient(rgba(82, 182, 236, 0.6), rgba(82, 182, 236, 0.6)),url("/img/homepage-section31.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
