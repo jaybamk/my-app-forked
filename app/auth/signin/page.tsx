@@ -19,7 +19,7 @@ export default function SignIn(){
                 <div className="p-5">
                     <div className="text-start mb-5">
                         <p className="h2 my-3 mb-5"><b>Welcome Back</b></p>
-                        <p className="h6">Don&apos;t have an account? <Link href={routes.auth.signup} className={styles.dontHaveAcctlink}>Sign up</Link></p>
+                        <p className="h6">Don&apos;t have an account? <Link href={routes.auth.signup.index} className={styles.dontHaveAcctlink}>Sign up</Link></p>
                     </div>
                     <form action="submit" method="get">
                         <div>
@@ -52,7 +52,7 @@ export default function SignIn(){
                                         <input type="password" className={`${styles.input} form-control border-primary text-lg-center`} id="Password" placeholder="*******************" aria-label="Password" required/>
                                     </div>   
                                     <div className="mb-4">
-                                        <Link href={routes.auth.password.index}>Forget password?</Link>
+                                        <Link href={routes.auth.signin.password.index}>Forget password?</Link>
                                     </div>
                                     <div className="">
                                         <button type="submit" className={`btn btn-primary ${styles.btn}`}>Sign in</button>

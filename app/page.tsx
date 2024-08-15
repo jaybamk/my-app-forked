@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import routes from "@/routes";
-import hero from "@/img/homepage-section11.png"
+import hero from "@/public/img/homepage-section11.png";
 import styles from "@/app/page.module.scss";
 import Footer from "@/components/Footer/index";
 import Header from "@/components/Header/index";

@@ -1,19 +1,23 @@
 const routes = {
   home: "/",
-  agreement:{
-    index: "/agreement",
-    terms: "/agreement/terms",
-    conditions: "/agreement/conditions"
-  },
   auth:{
     index: "/auth",
-    signin: "/auth/signin",
-    signup: "/auth/signup",
-    password:{
-      index: "/auth/resetPassword",
-      emailCode: "/auth/resetPassword/code_to_email",
-      codeVerification: "/auth/resetPassword/code_verification",
-      change: "/auth/resetpassword/changePassword" 
+    signin: {
+      index: "/auth/signin",
+      password:{
+        index: "/auth/resetPassword",
+        emailCode: "/auth/resetPassword/code_to_email",
+        codeVerification: "/auth/resetPassword/code_verification",
+        change: "/auth/resetpassword/changePassword",
+      },
+    },
+    signup: {
+      index: "/auth/signup",
+      agreement:{
+        index: "/agreement",
+        terms: "/agreement/terms",
+        conditions: "/agreement/conditions"
+      },
     }
   },
   support: {
@@ -24,7 +28,7 @@ const routes = {
     terms: "/support/about/terms",
     welcome: "/support/about/welcome",
     page: "/support/about/page",
-  },
+  }
 };
 
 export default routes;

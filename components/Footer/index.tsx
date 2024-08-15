@@ -2,10 +2,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import routes from '@/routes'
 import styles from './styles.module.scss'
-import logo from '@/img/logo-white.png'
-import facebook from '@/img/facebook.svg'
-import instagram from '@/img/instagram.svg'
-import twitter from '@/img/twitter.svg'
+import logo from '@/public/img/logo-white.png'
+import facebook from '@/public/img/facebook.svg'
+import instagram from '@/public/img/instagram.svg'
+import twitter from '@/public/img/twitter.svg'
 
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
         <footer className={`bg-secondary p-2vh p-7vw w-100 d-flex flex-wrap ${styles.footer} `}>
             <div className='col-6 col-md-auto order-1 order-md-0'>
                 <Link href={routes.home}>
-                    <Image src={logo} alt="logo" width={120} height={75} />
+                    <Image src={logo} alt="logo" width={120} height={45} />
                 </Link>
             </div>
             <div className='col-6 col-md-auto'>

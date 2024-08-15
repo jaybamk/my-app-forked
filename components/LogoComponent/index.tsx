@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
-import logo from "@/img/logo.png";
-import logoWhite from "@/img/logo-white.png";
+import logo from "@/public/img/logo.png";
+import logoWhite from "@/public/img/logo-white.png";
 import Image from "next/image";
 
 const LogoComponent = ({ className }:any) => {
