@@ -15,9 +15,8 @@ const routes = {
     signup: {
       index: "/auth/signup",
       agreement:{
-        index: "/agreement",
-        terms: "/agreement/terms",
-        conditions: "/agreement/conditions"
+        terms: "/auth/signup/agreement/terms",
+        conditions: "/auth/signup/agreement/conditions"
       },
     }
   },
