@@ -5,10 +5,11 @@ const routes = {
     signin: {
       index: "/auth/signin",
       password:{
-        index: "/auth/resetPassword",
-        emailCode: "/auth/resetPassword/code_to_email",
-        codeVerification: "/auth/resetPassword/code_verification",
-        change: "/auth/resetpassword/changePassword",
+        reset: {
+          index: "/auth/signin/password/reset",
+          codeVerification: "/auth/signin/password/reset/verification",
+        },
+        change: "/auth/signin/password/change",
       },
     },
     signup: {

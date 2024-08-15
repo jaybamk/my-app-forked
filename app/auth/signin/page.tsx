@@ -14,7 +14,7 @@ export default function SignIn(){
             </div>
             <div className="col-xs-12 col-lg-7 p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5">
                 <Link href="/" >
-                    <LogoComponent  className="float-end my-5 me-sm-4 me-md-5 me-2"/>
+                    <LogoComponent  className="float-end my-5 me-md-5 me-4"/>
                 </Link>
                 <div className="p-5">
                     <div className="text-start mb-5">
@@ -40,19 +40,19 @@ export default function SignIn(){
                                     <label htmlFor="Email" className="d-block">Email address</label>
                                     <div className="input-group mb-5 border-primary">
                                         <span className={`input-group-text ${styles.inputText} border-primary w-25`} id="basic-addon1">
-                                            <i className="bi bi-envelope"></i>
+                                            <Image src="/emailIcon.svg" width={30} height={30} alt="password Icon"/>
                                         </span>
                                         <input type="email" className={`${styles.input} form-control border-primary text-lg-center`} id="Email" name="Email" placeholder="johnkentacad@gmail.com" aria-label="Email address" required/>
                                     </div>
                                     <label htmlFor="Password" className="d-block">Password</label>
                                     <div className="input-group mb-5">
                                         <span className={`input-group-text ${styles.inputText} border-primary w-25 `} id="basic-addon1">
-                                            <i className="bi bi-lock"></i>
+                                            <Image src="/passwordIcon.svg" width={30} height={30} alt="password Icon"/>
                                         </span>
                                         <input type="password" className={`${styles.input} form-control border-primary text-lg-center`} id="Password" placeholder="*******************" aria-label="Password" required/>
                                     </div>   
                                     <div className="mb-4">
-                                        <Link href={routes.auth.signin.password.index}>Forget password?</Link>
+                                        <Link href={routes.auth.signin.password.reset.index}>Forget password?</Link>
                                     </div>
                                     <div className="">
                                         <button type="submit" className={`btn btn-primary ${styles.btn}`}>Sign in</button>
