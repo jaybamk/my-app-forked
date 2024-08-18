@@ -74,16 +74,6 @@
     --card-border-rgb: 200, 200, 200;
   }
 }
-.logo {
-  content: url('/img/logo.png');
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    content: url('/img/logo-white.png');
-  }
-}
-
 * {
   box-sizing: border-box;
   padding: 0;

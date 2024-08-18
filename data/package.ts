@@ -46,22 +46,40 @@ const packages = [
     ],
   },
   {
-    title: "",
-    subtle: "",
+    title: "Diamond Plus",
+    subtle:
+      "DIAMOND PLUS-100 dollars. Get access to all our diamond packages with just $100.",
     img: diamondImg,
     link: routes.home,
     subscribe: routes.auth,
     thumbsnail: diamond,
-    descriptions: [],
+    descriptions: [
+      "Learn Two languages free",
+      "Earn 20 dollars on every Diamond Plus Ambassador registered ",
+      "Earn 10  dollars on every Premium Ambassador registered",
+      "Earn 6 dollars on every Enterprise Ambassador registered",
+      "Earn 0 dollars on every Access Pro Ambassador registered",
+      "Earn 10 dollars on every student you bring to language academy",
+      "Earn 5 dollars each from all students your down line register every month",
+    ],
   },
   {
-    title: "",
-    subtle: "",
+    title: "Premimum",
+    subtle:
+      "PREMIUM-50 dollars. With just $50, get the best of all that is included in our Premium subscription",
     img: premiumImg,
     link: routes.home,
     subscribe: routes.auth,
     thumbsnail: premium,
-    descriptions: [],
+    descriptions: [
+      "Learn Two languages free",
+      "Earn 15 dollars on every Diamond Plus Ambassador registered ",
+      "Earn 10  dollars on every Premium Ambassador registered",
+      "Earn 7.5 dollars on every Enterprise Ambassador registered",
+      "Earn 0 dollars on every Access Pro Ambassador registered",
+      "Earn 10 dollars on every student you bring to language academy",
+      "Earn 5 dollars each from all students your down line register every month",
+    ],
   },
 ];
 

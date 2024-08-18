@@ -2,10 +2,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import routes from '@/routes'
 import styles from './styles.module.scss'
-import logo from '@/public/img/logo-white.png'
-import facebook from '@/public/img/facebook.svg'
-import instagram from '@/public/img/instagram.svg'
-import twitter from '@/public/img/twitter.svg'
+import logo from '@/img/logo-white.png'
+import facebook from '@/img/facebook.svg'
+import instagram from '@/img/instagram.svg'
+import twitter from '@/img/twitter.svg'
 
 
 export default function Footer() {

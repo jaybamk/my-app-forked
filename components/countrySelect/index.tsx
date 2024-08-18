@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import styles from '../signup.module.scss';
+import styles from '@/app/auth/signup/signup.module.scss';
 
 const CountrySelect = () => {
     useEffect(() => {
