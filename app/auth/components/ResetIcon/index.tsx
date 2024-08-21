@@ -4,7 +4,7 @@ import change from "@/img/password/change.svg";
 import changeWhite from "@/img/password/changeWhite.svg";
 import Image from "next/image";
 
-const ChangeIcon = ({ className }:any) => {
+const ChangeIcon = ({ className }:{ className?: string }) => {
     const [ChangeUrl, setChangeUrl] = useState(change);
 
     useEffect(() => {

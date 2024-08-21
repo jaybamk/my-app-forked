@@ -4,7 +4,7 @@ import logo from "@/img/logo.png";
 import logoWhite from "@/img/logo-white.png";
 import Image from "next/image";
 
-const LogoComponent = ({ className }:any) => {
+const LogoComponent = ({ className }: { className?: string }) => {
     const [logoUrl, setLogoUrl] = useState(logoWhite);
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const LogoComponent = ({ className }:any) => {
         };
     }, []);
 
-    return <Image src={logoUrl} alt="logo" width={120} height={45}  className={className} />;
+    return <Image src={logoUrl} alt="logo" width={120} height={45} className={className} />;
 };
 
 export default LogoComponent;
