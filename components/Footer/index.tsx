@@ -13,7 +13,7 @@ export default function Footer() {
         <footer className={`bg-secondary p-2vh p-7vw w-100 d-flex flex-wrap ${styles.footer} `}>
             <div className='col-6 col-md-auto order-1 order-md-0'>
                 <Link href={routes.home}>
-                    <Image src={logo} alt="logo" width={120} height={75} />
+                    <Image src={logo} alt="logo" width={120} height={45} />
                 </Link>
             </div>
             <div className='col-6 col-md-auto'>

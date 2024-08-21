@@ -1,15 +1,13 @@
-import Image from "next/image";
 import styles from './styles.module.scss'
 import Link from "next/link";
 import routes from "@/routes";
-import logo from "@/img/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react";
+import LogoComponent from "../LogoComponent";
 
 export default function Header() {
     const [open, setOpen] = useState(false);
-
     const toggle = () => {
         setOpen(!open);
     }
@@ -18,7 +16,7 @@ export default function Header() {
             <nav className={`w-100 d-flex justify-content-between`}>
                 <div>
                     <Link href="/">
-                        <Image src={logo} alt="logo" width={120} height={45} />
+                        <LogoComponent className=""/>
                     </Link>
                 </div>
                 <div className="">
@@ -29,7 +27,7 @@ export default function Header() {
                         <li><Link href={routes.support.contact}>Packages</Link></li>
                         <li><Link href={routes.support.about}>Testimonial</Link></li>
                         <li><Link href={routes.auth.signin}>Offers</Link></li>
-                        <li><Link className="btn btn-secondary" href={routes.auth.signin}>Sign Up</Link></li>
+                        <li><Link className="btn btn-secondary" href={routes.auth.signup}>Sign Up</Link></li>
                         <li><Link className="btn bg-transparent border-secondary" href={routes.auth.signin}>Login</Link></li>
                     </ul>
                 </div>
