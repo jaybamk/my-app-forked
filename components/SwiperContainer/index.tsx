@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import packages from "@/data/package";
+import packages from "@/data/packages";
 import { Autoplay, Pagination } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
