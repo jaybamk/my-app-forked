@@ -18,6 +18,9 @@ export default function Reset(){
                             </span>
                             <input type="email" className={`${styles.input} form-control border-primary text-lg-center`} id="Email" name="Email" placeholder="johnkentacad@gmail.com" aria-label="Email address" required/>
                         </div>
+                        <div className="">
+                              <button type="submit" className={`btn btn-primary ${styles.btn}`}>Sign in</button>
+                        </div>
                     </div>
                 </div>
             </div>
