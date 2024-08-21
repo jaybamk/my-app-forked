@@ -14,7 +14,7 @@ export default function SignUp(){
             <div className="p-5">
                 <div className="text-start mb-5">
                     <p className="h2 my-3 mb-5"><b>Create Your FREE Account</b></p>
-                    <p className="h6">Have an account? <Link href={routes.auth.signin.index} className={styles.dontHaveAcctlink}>Sign in</Link></p>
+                    <p className="h6">Have an account? <Link href={routes.auth.signin} className={styles.dontHaveAcctlink}>Sign in</Link></p>
                 </div>
                 <div>
                     <div className='mb-5'>
@@ -73,7 +73,7 @@ export default function SignUp(){
                             </div>
                             <div className='mb-3 d-flex align-items-center'>
                                 <input type="checkbox" name="agreement" id="agreement" className='align-self-start m-3' required/>
-                                <label htmlFor="agreement">I agree to Language Academy <Link href={routes.auth.signup.agreement.terms} className="text-primary">Terms</Link> and <Link href={routes.auth.signup.agreement.conditions} className="text-primary">Conditions</Link></label>
+                                <label htmlFor="agreement">I agree to Language Academy <Link href={routes.support.agreement.terms} className="text-primary">Terms</Link> and <Link href={routes.support.agreement.conditions} className="text-primary">Conditions</Link></label>
                             </div>
                             <div>
                                 <button type="submit" className={`btn btn-primary ${styles.btn}`}>Sign Up</button>

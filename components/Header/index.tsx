@@ -26,9 +26,9 @@ export default function Header() {
                     <ul className={`${open ? '' : 'd-none '}text-end d-md-flex align-items-center list-unstyled gap-20`}>
                         <li><Link href={routes.support.contact}>Packages</Link></li>
                         <li><Link href={routes.support.about}>Testimonial</Link></li>
-                        <li><Link href={routes.auth.signin.index}>Offers</Link></li>
-                        <li><Link className="btn btn-secondary" href={routes.auth.signup.index}>Sign Up</Link></li>
-                        <li><Link className="btn bg-transparent border-secondary" href={routes.auth.signin.index}>Login</Link></li>
+                        <li><Link href={routes.auth.signin}>Offers</Link></li>
+                        <li><Link className="btn btn-secondary" href={routes.auth.signup}>Sign Up</Link></li>
+                        <li><Link className="btn bg-transparent border-secondary" href={routes.auth.signin}>Login</Link></li>
                     </ul>
                 </div>
             </nav>

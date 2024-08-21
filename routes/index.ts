@@ -2,23 +2,8 @@ const routes = {
   home: "/",
   auth:{
     index: "/auth",
-    signin: {
-      index: "/auth/signin",
-      password:{
-        reset: {
-          index: "/auth/signin/password/reset",
-          codeVerification: "/auth/signin/password/reset/verification",
-        },
-        change: "/auth/signin/password/change",
-      },
-    },
-    signup: {
-      index: "/auth/signup",
-      agreement:{
-        terms: "/auth/signup/agreement/terms",
-        conditions: "/auth/signup/agreement/conditions"
-      },
-    }
+    signin: "/auth/signin",
+    signup: "/auth/signup",
   },
   support: {
     index: "/support",
@@ -28,6 +13,10 @@ const routes = {
     terms: "/support/about/terms",
     welcome: "/support/about/welcome",
     page: "/support/about/page",
+    agreement:{
+      terms: "/auth/signup/agreement/terms",
+      conditions: "/auth/signup/agreement/conditions"
+    },
   }
 };
 
