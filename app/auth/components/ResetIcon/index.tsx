@@ -1,31 +1,31 @@
 'use client';
 import { useEffect, useState } from 'react';
-import reset from "@/img/password/reset.svg";
-import resetWhite from "@/img/password/resetWhite.svg";
+import change from "@/img/password/change.svg";
+import changeWhite from "@/img/password/changeWhite.svg";
 import Image from "next/image";
 
-const ResetIcon = ({ className }:any) => {
-    const [ResetUrl, setResetUrl] = useState(reset);
+const ChangeIcon = ({ className }:any) => {
+    const [ChangeUrl, setChangeUrl] = useState(change);
 
     useEffect(() => {
         const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        const updateReset = () => {
+        const updateChange = () => {
             if (darkModeMediaQuery.matches) {
-                setResetUrl(resetWhite);
+                setChangeUrl(changeWhite);
             } else {
-                setResetUrl(reset);
+                setChangeUrl(change);
             }
         };
 
-        updateReset(); // Set initial Reset based on current preference
-        darkModeMediaQuery.addEventListener('change', updateReset); // Listen for changes
+        updateChange(); // Set initial Change based on current preference
+        darkModeMediaQuery.addEventListener('change', updateChange); // Listen for changes
 
         return () => {
-            darkModeMediaQuery.removeEventListener('change', updateReset); // Cleanup listener on unmount
+            darkModeMediaQuery.removeEventListener('change', updateChange); // Cleanup listener on unmount
         };
     }, []);
 
-    return <Image src={ResetUrl} alt="Reset" width={120} height={70}  className={className} />;
+    return <Image src={ChangeUrl} alt="Change" width={120} height={70}  className={className} />;
 };
 
-export default ResetIcon;
+export default ChangeIcon;
