@@ -19,7 +19,7 @@ export default function SignIn(){
                 <div className="p-5">
                     <div className="text-start mb-5">
                         <p className="h2 my-3 mb-5"><b>Welcome Back</b></p>
-                        <p className="h6">Don&apos;t have an account? <Link href={routes.auth.signup} className={styles.dontHaveAcctlink}>Sign up</Link></p>
+                        <p className="h6">Don&apos;t have an account? <Link href={routes.auth.signup} className={styles.link}>Sign up</Link></p>
                     </div>
                     <form action="submit" method="get">
                         <div>
@@ -28,7 +28,7 @@ export default function SignIn(){
                                     <Link href={`${mediaLink.googleLink}`} className={`btn ${styles.btn} ${styles.btnGoogle} btn-light border-dark mb-5`}>Sign in with Google</Link>
                                     <hr />
                                 </div>
-                                <div className={`${styles.socialDivide} col-md-2`}>
+                                <div className={`d-flex justify-content-center align-items-end col-md-2`}>
                                     <p>Or</p>
                                 </div>
                                 <div className="col-md-5">
@@ -39,14 +39,14 @@ export default function SignIn(){
                             <div className="mb-5 mb-md-0">
                                     <label htmlFor="Email" className="d-block">Email address</label>
                                     <div className="input-group mb-5 border-primary">
-                                        <span className={`input-group-text ${styles.inputText} border-primary w-25`} id="basic-addon1">
+                                        <span className={`input-group-text ${styles.inputText} d-flex justify-content-center align-items-center border-primary w-25`} id="basic-addon1">
                                             <Image src="/emailIcon.svg" width={30} height={30} alt="password Icon"/>
                                         </span>
                                         <input type="email" className={`${styles.input} form-control border-primary text-lg-center`} id="Email" name="Email" placeholder="johnkentacad@gmail.com" aria-label="Email address" required/>
                                     </div>
                                     <label htmlFor="Password" className="d-block">Password</label>
                                     <div className="input-group mb-5">
-                                        <span className={`input-group-text ${styles.inputText} border-primary w-25 `} id="basic-addon1">
+                                        <span className={`input-group-text ${styles.inputText} d-flex justify-content-center align-items-center border-primary w-25 `} id="basic-addon1">
                                             <Image src="/passwordIcon.svg" width={30} height={30} alt="password Icon"/>
                                         </span>
                                         <input type="password" className={`${styles.input} form-control border-primary text-lg-center`} id="Password" placeholder="*******************" aria-label="Password" required/>

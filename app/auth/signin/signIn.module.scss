@@ -1,12 +1,12 @@
-.dontHaveAcctlink {
+.link {
   color: rgb(7, 172, 249);
 }
-.dontHaveAcctlink:hover {
+.link:hover {
   color: gray;
   text-decoration: underline;
 }
 .btn {
-  min-height: 60px;
+  min-height: 50px;
   align-items: center;
   display: flex;
   width: 100%;
@@ -21,22 +21,13 @@
 .btnFacebook:hover {
   background-color: #7997d1;
 }
-.socialDivide {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
 .input {
   height: 50px;
   font-size: 20px;
   border-left: none;
 }
 .inputText {
-  display: flex;
   min-width: 30px;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
   border-right: none;
   font-size: 20px;
 }

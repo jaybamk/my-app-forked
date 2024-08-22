@@ -139,3 +139,11 @@ ul {
     )
     rgb(var(--background-start-rgb));
 }
+input{
+  color: black;
+}
+@media (prefers-color-scheme: dark) {
+  input{
+    color: black;
+  }
+}

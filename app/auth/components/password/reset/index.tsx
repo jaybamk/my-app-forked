@@ -33,7 +33,7 @@ export default function Reset(){
     }, []);
     return(
         <>
-        <div className="mb-4" onClick={handleShow}>
+        <div className={`${styles.link} mb-4`} onClick={handleShow}>
             Forget password?
         </div>
 
