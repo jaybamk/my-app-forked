@@ -20,7 +20,7 @@ const SignupForm = () => {
   const formOptions = { resolver: yupResolver(validationSchema) };
   const { register, handleSubmit, formState: { errors }, watch } = useForm(formOptions);
 
-  const onSubmit:any = data => {
+  const onSubmit = (data:any) => {
     console.log(data);
   };
 
