@@ -3,8 +3,6 @@ import ResetIcon from "@/app/auth/components/ResetIcon";
 import Image from "next/image";
 import styles from './reset.module.scss';
 import { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
 export default function Reset(){
@@ -41,7 +39,7 @@ export default function Reset(){
             <Modal.Header closeButton>
             </Modal.Header>
             <Modal.Body>
-                <div className="d-flex justify-content-around align-content-center p-5">
+                <div className="d-flex justify-content-around align-content-center p-2 p-md-3 p-lg-5">
                     <div>
                         <div><ResetIcon className="" /></div>
                         <div>

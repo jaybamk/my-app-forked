@@ -38,14 +38,14 @@ export default function SignIn(){
                             </div>
                             <div className="mb-5 mb-md-0">
                                     <label htmlFor="Email" className="d-block">Email address</label>
-                                    <div className="input-group mb-5 border-primary">
+                                    <div className="input-group mb-4 border-primary">
                                         <span className={`input-group-text ${styles.inputText} d-flex justify-content-center align-items-center border-primary w-25`} id="basic-addon1">
                                             <Image src="/emailIcon.svg" width={30} height={30} alt="password Icon"/>
                                         </span>
                                         <input type="email" className={`${styles.input} form-control border-primary text-lg-center`} id="Email" name="Email" placeholder="johnkentacad@gmail.com" aria-label="Email address" required/>
                                     </div>
                                     <label htmlFor="Password" className="d-block">Password</label>
-                                    <div className="input-group mb-5">
+                                    <div className="input-group mb-4">
                                         <span className={`input-group-text ${styles.inputText} d-flex justify-content-center align-items-center border-primary w-25 `} id="basic-addon1">
                                             <Image src="/passwordIcon.svg" width={30} height={30} alt="password Icon"/>
                                         </span>
