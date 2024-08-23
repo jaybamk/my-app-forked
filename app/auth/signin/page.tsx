@@ -10,20 +10,20 @@ export default function SignIn(){
     <>
         <div className="row">
             <div className="d-none d-lg-flex col-lg-5 bg-primary justify-content-around align-content-center p-5">
-                <Image src="/signin-img.svg" alt="signin image" width={400} height={700} className='w-100'/>
+                <Image src="/signin-img.svg" alt="signin image" width={400} height={600} className='w-100'/>
             </div>
             <div className="col-xs-12 col-lg-7 p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5">
                 <Link href="/" >
-                    <LogoComponent  className="float-end u700-=09my-5 me-md-5 me-4"/>
+                    <LogoComponent  className="float-end my-5 me-md-5 me-4"/>
                 </Link>
                 <div className="p-5">
                     <div className="text-start mb-5">
-                        <p className="h2 my-3 mb-5"><b>Welcome Back</b></p>
+                        <p className="h2 my-3 mb-4"><b>Welcome Back</b></p>
                         <p className="h6">Don&apos;t have an account? <Link href={routes.auth.signup} className={styles.link}>Sign up</Link></p>
                     </div>
                     <form action="submit" method="get">
                         <div>
-                            <div className="d-none d-md-flex row mb-5">
+                            <div className="d-none d-md-flex row mb-4">
                                 <div className="col-md-5">
                                     <Link href={`${mediaLink.googleLink}`} className={`btn ${styles.btn} ${styles.btnGoogle} btn-light border-dark mb-5`}>Sign in with Google</Link>
                                     <hr />
@@ -36,17 +36,17 @@ export default function SignIn(){
                                     <hr />
                                 </div>
                             </div>
-                            <div className="mb-5 mb-md-0">
+                            <div className="mb-4 mb-md-0">
                                     <label htmlFor="Email" className="d-block">Email address</label>
                                     <div className="input-group mb-4 border-primary">
-                                        <span className={`input-group-text ${styles.inputText} d-flex justify-content-center align-items-center border-primary w-25`} id="basic-addon1">
+                                        <span className={`input-group-text inputText d-flex justify-content-center align-items-center border-primary w-25`} id="basic-addon1">
                                             <Image src="/emailIcon.svg" width={30} height={30} alt="password Icon"/>
                                         </span>
                                         <input type="email" className={`${styles.input} form-control border-primary text-lg-center`} id="Email" name="Email" placeholder="johnkentacad@gmail.com" aria-label="Email address" required/>
                                     </div>
                                     <label htmlFor="Password" className="d-block">Password</label>
                                     <div className="input-group mb-4">
-                                        <span className={`input-group-text ${styles.inputText} d-flex justify-content-center align-items-center border-primary w-25 `} id="basic-addon1">
+                                        <span className={`input-group-text inputText d-flex justify-content-center align-items-center border-primary w-25 `} id="basic-addon1">
                                             <Image src="/passwordIcon.svg" width={30} height={30} alt="password Icon"/>
                                         </span>
                                         <input type="password" className={`${styles.input} form-control border-primary text-lg-center`} id="Password" placeholder="*******************" aria-label="Password" required/>
