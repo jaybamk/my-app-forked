@@ -59,7 +59,6 @@ export default function Change(){
 
     return(
         <>
-        <button  className={`btn btn-primary ${styles.btn}`} onClick={handleShow}>Enter</button>
         <Modal show={show} onHide={handleClose} data-bs-theme={Theme} className="text-center">
             <Modal.Header closeButton>
             </Modal.Header>
@@ -88,7 +87,7 @@ export default function Change(){
                                 </div>
                                 <div className='text-primary'>{errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}</div>
                                 <div>
-                                    <button type="submit" className={`btn btn-primary ${styles.btn}`}>Sign Up</button>
+                                    <button disabled={true} type="submit" className={`btn btn-primary ${styles.btn}`}>Sign Up</button>
                                 </div>
                             </form>
                         </div>
