@@ -79,15 +79,15 @@
   padding: 0;
   margin: 0;
 }
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 html {
@@ -138,4 +138,18 @@ ul {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+input {
+  color: black;
+}
+@media (prefers-color-scheme: dark) {
+  input {
+    color: black;
+  }
+}
+.inputText {
+  min-width: 30px;
+  background: rgba(196, 196, 196, 0.5);
+  border-right: none;
+  font-size: 20px;
 }

@@ -3,8 +3,7 @@ import ResetIcon from "@/app/auth/components/ResetIcon";
 import Image from "next/image";
 import styles from './reset.module.scss';
 import { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import Change from "../change";
 import Modal from 'react-bootstrap/Modal';
 
 export default function Reset(){
@@ -33,7 +32,7 @@ export default function Reset(){
     }, []);
     return(
         <>
-        <div className="mb-4" onClick={handleShow}>
+        <div className={`${styles.link} mb-3`} onClick={handleShow}>
             Forget password?
         </div>
 
@@ -41,7 +40,7 @@ export default function Reset(){
             <Modal.Header closeButton>
             </Modal.Header>
             <Modal.Body>
-                <div className="d-flex justify-content-around align-content-center p-5">
+                <div className="d-flex justify-content-around align-content-center p-2 p-md-3 p-lg-5">
                     <div>
                         <div><ResetIcon className="" /></div>
                         <div>
@@ -49,17 +48,15 @@ export default function Reset(){
                             <p>Enter your Email and click on the link provided<br/>or write the code here</p>
                         </div>
                         <div>
-                            <form>
                                 <div className="input-group mb-5 border-primary">
-                                    <span className={`input-group-text ${styles.inputText} border-primary w-25`} id="basic-addon1">
+                                    <span className={`input-group-text inputText d-flex justify-content-center align-items-center border-primary w-25 `} id="basic-addon1">
                                         <Image src="/emailIcon.svg" width={30} height={30} alt="password Icon"/>
                                     </span>
                                     <input type="email" className={`${styles.input} form-control border-primary text-lg-center`} id="Email" name="Email" placeholder="johnkentacad@gmail.com" aria-label="Email address" required autoFocus/>
                                 </div>
                                 <div className="">
-                                    <button type="submit" className={`btn btn-primary ${styles.btn}`}>Sign in</button>
+                                    <Change/>
                                 </div>
-                            </form>
                         </div>
                     </div>
                 </div>
