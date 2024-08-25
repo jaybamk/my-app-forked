@@ -4,7 +4,7 @@ import reset from "@/img/password/reset.svg";
 import resetWhite from "@/img/password/resetWhite.svg";
 import Image from "next/image";
 
-const ResetIcon = ({ className }:any) => {
+const ResetIcon = ({ className }:{className: string}) => {
     const [ResetUrl, setResetUrl] = useState(reset);
 
     useEffect(() => {
