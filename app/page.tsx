@@ -9,7 +9,7 @@ import Header from "@/components/Header/index";
 import "swiper/scss";
 import "swiper/scss/pagination";
 import SwiperContainer from "@/components/SwiperContainer";
-import MyButton from "@/components/button";
+import SecButton from "@/components/button";
 
 export default function Home() {
   return (
@@ -48,41 +48,40 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section8">
-          <div className="">
-            <h1>What do we sell?</h1>
-            <p>
+        <section className={`w-100 ${styles.section8}`}>
+          <div>
+            <h1 className={` ${styles.secheading}`}>What do we sell?</h1>
+            <p className={`${styles.paragraph} pb-2`}>
               We promote the learning of INTERNATIONAL LANGUAGES AND INDIGENOUS
               LANGUAGES
             </p>
-            <div className="">
+            <div className={`d-flex justify-content-center `}>
     <div>
-      <h1 className="header">INTERNATIONAL LANGUAGES</h1>
-      <p className="languages">FRENCH, GERMAN, SPANISH, and CHINESE</p>
-      <p className="purpose">For business, education, or leisure purposes.</p>
+      <h1 className="styles.lang">INTERNATIONAL LANGUAGES:</h1>
+      <p className="styles.paragraph">FRENCH, GERMAN, SPANISH, and CHINESE</p>
+      <p className="styles.paragraph">For business, education, or leisure purposes.</p>
     </div>
     <div>
-      <h1 className="">INDIGENOUS LANGUAGES</h1>
-      <p className="languages">YORUBA, IGBO, and HAUSA</p>
-      <p className="purpose">Learning indigenous languages helps the learner to connect to their roots.</p>
+      <h1 className="lang">INDIGENOUS LANGUAGES:</h1>
+      <p className="paragraph">YORUBA, IGBO, and HAUSA</p>
+      <p className="paragraph">Learning indigenous languages helps the learner to connect to their roots.</p>
     </div>
   </div>
-            <h1 className="">OUR VIRTUAL CLASS</h1>
-            <p className="paragraph">
+            <h1 className="lang">OUR VIRTUAL CLASS</h1>
+            <p className="paragragh">
               STUDENTS LEARN FROM THE COMFORT OF THEIR HOMES
             </p>
             <p className="paragraph">
-              Our online education platform is a{" "}
-              <span className="highlight">fully functional learning place</span>. It
+              Our online education platform is a fully functional learning place. It
               is simple, unique, and interactive.
             </p>
             <p className="paragraph">
-              Our teachers are extremely{" "}
-              <span className="highlight">highly rated</span>.
+              Our teachers are extremely highly rated.
             </p>
           </div>
           <div>
             <button/>
+            <button>Learn More</button>
           </div>
         </section>
 
