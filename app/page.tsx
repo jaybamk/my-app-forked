@@ -3,13 +3,14 @@ import Image from "next/image";
 import routes from "@/routes";
 import { useEffect } from "react";
 import hero from "@/img/homepage-section11.png";
+import arrow from "@/img/section9/arrow.png";
 import styles from "@/app/page.module.scss";
 import Footer from "@/components/Footer/index";
 import Header from "@/components/Header/index";
 import "swiper/scss";
 import "swiper/scss/pagination";
 import SwiperContainer from "@/components/SwiperContainer";
-import SecButton from "@/components/button";
+// import SecButton from "@/components/button";
 
 export default function Home() {
   return (
@@ -48,43 +49,69 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={`w-100 ${styles.section8}`}>
-          <div>
-            <h1 className={` ${styles.secheading}`}>What do we sell?</h1>
-            <p className={`${styles.paragraph} pb-2`}>
+        <section className={`${styles.section8}`}>
+          <div className={`${styles.heading1}`}>
+            <h1 className={`${styles.heading1Header}`}>What do we sell?</h1>
+          </div>
+          <div className={`${styles.subHeading1}`}>
+            <p className={`${styles.subHeading1Paragraph}`}>
               We promote the learning of INTERNATIONAL LANGUAGES AND INDIGENOUS
               LANGUAGES
             </p>
-            <div className={`d-flex justify-content-center `}>
-    <div>
-      <h1 className="styles.lang">INTERNATIONAL LANGUAGES:</h1>
-      <p className="styles.paragraph">FRENCH, GERMAN, SPANISH, and CHINESE</p>
-      <p className="styles.paragraph">For business, education, or leisure purposes.</p>
-    </div>
-    <div>
-      <h1 className="lang">INDIGENOUS LANGUAGES:</h1>
-      <p className="paragraph">YORUBA, IGBO, and HAUSA</p>
-      <p className="paragraph">Learning indigenous languages helps the learner to connect to their roots.</p>
-    </div>
-  </div>
-            <h1 className="lang">OUR VIRTUAL CLASS</h1>
-            <p className="paragragh">
+          </div>
+
+          <div className={`${styles.languages}`}>
+            <div className={`${styles.intLangBox}`}>
+              <h1 className={`${styles.intLang}`}>INTERNATIONAL LANGUAGES:</h1>
+              <p className={`${styles.subIntLang1}`}>
+                FRENCH, GERMAN, SPANISH, and CHINESE
+              </p>
+              <p className={`${styles.subIntLang2}`}>
+                For business, education, or leisure purposes.
+              </p>
+            </div>
+            <div className={`${styles.indLangBox}`}>
+              <h1 className={`${styles.indLang}`}>INDIGENOUS LANGUAGES:</h1>
+              <p className={`${styles.subIndLang1}`}>YORUBA, IGBO, and HAUSA</p>
+              <p className={`${styles.subIndLang2}`}>
+                Learning indigenous languages helps the learner to connect to
+                their roots.
+              </p>
+            </div>
+          </div>
+
+          <div className={`${styles.virtualBox}`}>
+            <h1 className={`${styles.heading2}`}>OUR VIRTUAL CLASS</h1>
+            <p className={`${styles.subHeading2}`}>
               STUDENTS LEARN FROM THE COMFORT OF THEIR HOMES
             </p>
-            <p className="paragraph">
-              Our online education platform is a fully functional learning place. It
-              is simple, unique, and interactive.
+            <p className={`${styles.virtualText1}`}>
+              Our online education platform is a fully functional learning
+              place. It is simple, unique, and interactive.
             </p>
-            <p className="paragraph">
+            <p className={`${styles.virtualText2}`}>
               Our teachers are extremely highly rated.
             </p>
           </div>
           <div>
-            <button/>
-            <button>Learn More</button>
+            {/** <button/> */}
+            <button className={`${styles.section8Button}`}>Learn More</button>
           </div>
         </section>
-
+        <section className={`${styles.section9}`}>
+          <div className={`${styles.section9Content}`}>
+            <p className={`${styles.section9Text}`}>
+              Ready to start a journey with us?
+            </p>
+          </div>
+          <div className={`${styles.section9ButtonBox}`}>
+            <button className={`${styles.section9Button}`}>
+              {" "}
+              <span className={`${styles.section9Button}`}>Apply Online</span>
+              <Image className={`${styles.arrow}`} src={arrow} alt="arrow" />
+            </button>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

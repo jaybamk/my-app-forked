@@ -15,36 +15,126 @@
 
 .section8 {
   font-family: Poppins;
-  //display: flex;
-  background-color: #FF9900;
+  background-color: #ff5e00;
   text-align: center;
-  // justify-content: space-around;
   color: #FFFFFF;
     width: 100%;
-    //height: 674px;
-    //top: 5751px;
-    left: -7px;
-    gap: 0px;
-    opacity: 0px;
-   //margin: 10px
+    opacity: 0.8;
+    padding: 20px 40px 40px;
 }
-   .secheading {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 54px;
-    //text-align: center;
-    padding-top: 20px;
+.heading1Header{
+  font-size: 24px;
+}
+
+.subHeading1Paragraph{
+  font-size: 12px;
+}
+
+  .languages {
+    display: flex;
+    justify-content: center;
+  }
+  .intLangBox{
+    margin-right: 10px;
+    width: 100%;
+    line-height: 18px;
+}
+  
+  .intLang {
+    font-size: 18px;
+      }
+
+  .indLang {
+font-size: 18px;
   }
 
-  .lang {
-font-size: 14px;
-font-weight: 700;
-line-height: 36px;
-padding-top: 20%;
+  .indLangBox {
+margin-left: 10px;
+width: 100%;
+    line-height: 18px;
   }
-  .paragraph {
-font-size: 8px;
-font-weight: 600;
-line-height: 27px;
-padding-bottom: 0px;
+
+  .subIntLang1 {
+    font-size: 14px;
+  }
+
+  .subIndLang1{
+    font-size: 14px;
+  }
+
+  .subIntLang2{
+    font-size: 12px;
+  }
+  .subIndLang2{
+    font-size: 12px;
+  }
+  .virtualBox{
+    line-height: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .heading2{
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  .subHeading2{
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  .virtualText1 {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .virtualText2 {
+    font-size: 12px;
+  }
+  .section8Button{
+    --bs-bg-opacity: 1;
+    background-color: rgb(21 106 151);
+    padding: 6px 32px;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 1px 2px 5px #282d2b;
+    border: none;
+    border-radius: 5px;
+  }
+  .section9{
+    --bs-white: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 18px;
+    align-items: center;
+    margin: -4px -8px;
+  }
+
+  .section9Text{
+font-weight: bold;
+padding-top: 14px;
+  }
+  .section9ButtonBox{
+    display: flex;
+    justify-content: space-evenly;
+  }
+span .section9Button{
+margin-right: 5px;
+}
+  .section9Button{
+    --bs-bg-opacity: 1;
+    background-color: rgb(38, 118, 161);
+    padding: 6px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    //box-shadow: 1px 2px 5px #282d2b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 0px;
+    
+  }
+  .arrow{
+    height: 24px;
+    width: 24px;
+    margin-top: 6px;
+
   }
