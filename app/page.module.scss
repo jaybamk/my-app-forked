@@ -122,7 +122,7 @@ margin-right: 5px;
   .section9Button{
     --bs-bg-opacity: 1;
     background-color: rgb(38, 118, 161);
-    padding: 6px 20px;
+    padding: 6px 5px;
     font-size: 13px;
     font-weight: bold;
     //box-shadow: 1px 2px 5px #282d2b;
@@ -136,5 +136,31 @@ margin-right: 5px;
     height: 24px;
     width: 24px;
     margin-top: 6px;
+    // align-items: center;
 
   }
+  @media (min-width: 320px) and (max-width: 375px) {
+ .section9Button{
+  display: flex;
+  /* width: 100%; */
+  align-items: center;
+  flex-direction: row;
+  padding: 3px 0px;
+ 
+ }
+ }
+  @media (min-width: 320px) and (max-width: 375px) {
+ .section9ButtonText{
+  display: flex;
+ //flex: 2;
+
+
+ }
+ }
+  @media (min-width: 320px) and (max-width: 375px) {
+ .section9ButtonInButton{
+  display: flex;
+  justify-content: space-between;
+ }
+ }
+

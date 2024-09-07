@@ -106,9 +106,11 @@ export default function Home() {
           </div>
           <div className={`${styles.section9ButtonBox}`}>
             <button className={`${styles.section9Button}`}>
-              {" "}
-              <span className={`${styles.section9Button}`}>Apply Online</span>
+              <div className={`${styles.section9ButtonInButton}`}> 
+                <span className={`${styles.section9ButtonText}`}>Apply Online</span>
               <Image className={`${styles.arrow}`} src={arrow} alt="arrow" />
+              </div>
+             
             </button>
           </div>
         </section>
