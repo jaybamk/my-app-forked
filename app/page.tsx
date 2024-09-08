@@ -48,7 +48,44 @@ export default function Home() {
             <SwiperContainer />
           </div>
         </section>
+<section className={`${styles.section7}`}>
+<div>
+<div>
+  <Image src="" alt="" />
+  <div>
+    I can come take care of your pitch
+  </div>
+</div>
+<p>Doubting? Hear from others</p>
+<div>
+  <Image src="" alt="" />
+  <div>
+    I can help marketing strategy
+  </div>
+</div>
+</div>
+<div>
+  do you require some help fro your project: Conception workshop, prototyping, marketing strategy, landing page, Ux/UI?
+</div>
+<div>
+  <button>Register Now</button>
+</div>
+<div>
+<div>
+  <Image src="" alt="" />
+</div>
+<div>I can design your website</div>
+<div>
+  <Image src="" alt="" />
+</div>
+<div>I will define the profilr of your users</div>
+<div>
+  <Image src="" alt="" />
+</div>
+<div>I can prototype your app</div>
 
+</div>
+</section>
         <section className={`${styles.section8}`}>
           <div className={`${styles.heading1}`}>
             <h1 className={`${styles.heading1Header}`}>What do we sell?</h1>
