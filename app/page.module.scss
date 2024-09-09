@@ -163,4 +163,36 @@ margin-right: 5px;
   justify-content: space-between;
  }
  }
+.innercontainer1{
+  display: flex;
+  justify-content: space-around;
+}
 
+.innercontainer2{
+  display: flex;
+  text-align: center;
+}
+
+.innercontainer3{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.innercontainer4{
+  display: flex;
+  justify-content: space-around;
+}
+
+.section7{
+  background: linear-gradient(180deg, #52B6EC 0%, rgba(82, 182, 236, 0) 100%);
+}
+
+.centeredBtnContainer3{
+  background-color: #FF9900;
+  color:#FFFFFF;
+  border: none;
+  text-align: center;
+  padding: 10px 30px;
+  border: none;
+}

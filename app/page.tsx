@@ -4,6 +4,11 @@ import routes from "@/routes";
 import { useEffect } from "react";
 import hero from "@/img/homepage-section11.png";
 import arrow from "@/img/section9/arrow.png";
+import Section7img1 from "@/img/section7/Section7img1.png";
+import Section7img2 from "@/img/section7/Section7img2.png";
+import Section7img3 from "@/img/section7/Section7img3.png";
+import Section7img4 from "@/img/section7/Section7img4.png";
+import Section7img5 from "@/img/section7/Section7img5.png";
 import styles from "@/app/page.module.scss";
 import Footer from "@/components/Footer/index";
 import Header from "@/components/Header/index";
@@ -49,38 +54,41 @@ export default function Home() {
           </div>
         </section>
 <section className={`${styles.section7}`}>
+<div className={`${styles.innercontainer1}`}>
 <div>
-<div>
-  <Image src="" alt="" />
+  <Image className={`${styles.Section7img1}`} src={Section7img1} alt="sec7tn1" />
+
   <div>
     I can come take care of your pitch
   </div>
 </div>
 <p>Doubting? Hear from others</p>
 <div>
-  <Image src="" alt="" />
+<Image className={`${styles.Section7img2}`} src={Section7img2} alt="sec7tn2" />
   <div>
     I can help marketing strategy
   </div>
 </div>
 </div>
-<div>
-  do you require some help fro your project: Conception workshop, prototyping, marketing strategy, landing page, Ux/UI?
+<div className={`${styles.innercontainer2}`}>
+  <p className={`${styles.pcontainer2}`}>do you require some help fro your project: Conception workshop, prototyping, 
+    marketing strategy, landing page, Ux/UI?
+  </p>
+  </div>
+<div className={`${styles.innercontainer3}`}>
+  <button className={`${styles.centeredBtnContainer3}`}>Register Now</button>
 </div>
+<div className={`${styles.innercontainer4}`}>
 <div>
-  <button>Register Now</button>
-</div>
-<div>
-<div>
-  <Image src="" alt="" />
+<Image className={`${styles.Section7img3}`} src={Section7img3} alt="sec7tn3" />
 </div>
 <div>I can design your website</div>
 <div>
-  <Image src="" alt="" />
+<Image className={`${styles.Section7img4}`} src={Section7img4} alt="sec7tn4" />
 </div>
 <div>I will define the profilr of your users</div>
 <div>
-  <Image src="" alt="" />
+<Image className={`${styles.Section7img5}`} src={Section7img5} alt="sec7tn5" />
 </div>
 <div>I can prototype your app</div>
 
