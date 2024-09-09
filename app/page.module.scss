@@ -177,6 +177,7 @@ margin-right: 5px;
   display: flex;
   justify-content: center;
   align-content: center;
+  padding-bottom: 0px;
 }
 
 .innercontainer4{
@@ -184,10 +185,15 @@ margin-right: 5px;
   justify-content: space-around;
 }
 
-.section7{
+.section7{ 
   background: linear-gradient(180deg, #52B6EC 0%, rgba(82, 182, 236, 0) 100%);
+  z-index: 100px;
+  padding-top: 20px;
+  padding-bottom: 100px;
 }
-
+.Section7Headertxt{
+  font-weight: 500;
+}
 .centeredBtnContainer3{
   background-color: #FF9900;
   color:#FFFFFF;
@@ -195,4 +201,30 @@ margin-right: 5px;
   text-align: center;
   padding: 10px 30px;
   border: none;
+}
+
+.imgNote{
+  background-color: #FFFFFF;
+  padding: 5px 10px ;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 300;
+  position: relative
+ 
+}
+
+.Section7img1{
+  position: absolute;
+}
+.Section7img2{
+  position: absolute;
+}
+.Section7img3{
+  position: absolute;
+}
+.Section7img4{
+  position: absolute;
+}
+.Section7img5{
+  position: absolute;
 }

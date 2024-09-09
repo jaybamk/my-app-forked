@@ -58,14 +58,14 @@ export default function Home() {
 <div>
   <Image className={`${styles.Section7img1}`} src={Section7img1} alt="sec7tn1" />
 
-  <div>
+  <div className={`${styles.imgNote}`}>
     I can come take care of your pitch
   </div>
 </div>
-<p>Doubting? Hear from others</p>
+<p className={`${styles.Section7Headertxt}`}>Doubting? Hear from others</p>
 <div>
 <Image className={`${styles.Section7img2}`} src={Section7img2} alt="sec7tn2" />
-  <div>
+  <div className={`${styles.imgNote}`}>
     I can help marketing strategy
   </div>
 </div>
@@ -82,15 +82,17 @@ export default function Home() {
 <div>
 <Image className={`${styles.Section7img3}`} src={Section7img3} alt="sec7tn3" />
 </div>
-<div>I can design your website</div>
+<div className={`${styles.imgNote}`}>
+  I can design your website
+</div>
 <div>
 <Image className={`${styles.Section7img4}`} src={Section7img4} alt="sec7tn4" />
 </div>
-<div>I will define the profilr of your users</div>
+<div className={`${styles.imgNote}`}>I will define the profile of your users</div>
 <div>
 <Image className={`${styles.Section7img5}`} src={Section7img5} alt="sec7tn5" />
 </div>
-<div>I can prototype your app</div>
+<div className={`${styles.imgNote}`}>I can prototype your app</div>
 
 </div>
 </section>
